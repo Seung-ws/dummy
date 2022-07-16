@@ -1,16 +1,9 @@
+# My Test & Dummy Data
 
+## v1.0.0
+-----
++ Test ubuntu DockerFile 파일 생성
++ 기타 파일 정리
 
-
-
-# dummy
-
----
-
-
-
-
-#### 직접 만든 더미 파일들
-
-+ images
-
-#### 
+## init
++ 테스트 용으로 만든 svg 파일 추가
