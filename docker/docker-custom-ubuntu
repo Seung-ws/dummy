@@ -14,6 +14,6 @@ RUN apt-get install -y \
         screen \
 	openjdk-11-jdk
 
-RUN apt-get install -y apt-utils locales
+RUN apt-get install -y locales
 RUN locale-gen ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
