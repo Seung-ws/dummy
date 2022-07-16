@@ -1,1 +1,0 @@
-chmod 600 /var/log/tallylog
