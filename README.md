@@ -1,4 +1,4 @@
-# My Test & Dummy Data
+# Test & Dummy data
 -----
 
 ## v1.0.0
