@@ -3,6 +3,10 @@ FROM ubuntu:20.04
 
 RUN apt-get update && apt-get upgrade -y
 
+RUN apt-get install -y apt-utils locales
+RUN locale-gen ko_KR.UTF-8
+ENV LC_ALL ko_KR.UTF-8
+
 RUN DEBIAN_FRONTEND=noninteractive TZ=Asia/Seoul apt-get -y install tzdata
 RUN apt-get install -y \
         vim \
@@ -12,8 +16,4 @@ RUN apt-get install -y \
         wget \
         procps \
         screen \
-	openjdk-11-jdk
-
-RUN apt-get install -y locales
-RUN locale-gen ko_KR.UTF-8
-ENV LC_ALL ko_KR.UTF-8
+        openjdk-11-jdk
