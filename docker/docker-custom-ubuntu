@@ -1,15 +1,16 @@
 FROM ubuntu:20.04
-RUN apt update && apt upgrade -y
-RUN apt install -y \
-        vim \
-        git \
-        curl \
-        man \
-        wget \
-        procps \
-        screen \
-	openjdk-11-jdk
+#ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt install -y apt-utils locales
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y apt-utils locales
 RUN locale-gen ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
+
+RUN DEBIAN_FRONTEND=noninteractive TZ=Asia/Seoul apt-get -y install tzdata
+RUN apt-get install -y \
+        vim \
+        git \
+        wget \
+        screen \
+        openjdk-11-jdk
