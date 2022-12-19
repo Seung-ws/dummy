@@ -1,4 +1,13 @@
 # Test & Dummy data
+## v202212200107 (git  초기설정)
+
++ git config user.name  ''
++ git config user.email ''
++ git remote -v
++ git remote add origin 'url'
++ git remote remove origin
+
+
 -----
 
 ## v1.0.0
